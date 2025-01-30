@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    font-family: "Roboto", sans-serif!important;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: white;
+    border-bottom: 1px solid #f3f2f2;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 28px;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.nav-links a.active {
+    color: 4CAF50;
+}
+
+
+.nav-links a:hover {
+    color: #4CAF50;
+    border-bottom:3px solid #388E3C;
+}
+
+
+.login-btn {
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #388E3C;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color:rgb(241, 241, 241);
+}
+
+
+.hero-content {
+    max-width: 50%;
+}
+
+.subheading {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    font-family:Roboto,sans-serif;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #333;
+}
+
+.green-text {
+    color: #4CAF50;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+
+.shop-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.shop-button:hover {
+    background-color: #388E3C;
+}
+
+
+.hero-image img {
+    max-width: 500px;
+}

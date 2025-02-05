@@ -86,13 +86,6 @@
 * {
     box-sizing: border-box;
 }
-body {
-    font-family: Cera Pro, sans-serif !important;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
-}
 
 .navbar {
     display: flex;
@@ -171,10 +164,6 @@ body {
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
 }
 
 
@@ -244,7 +233,6 @@ body {
 .container {
     width: 1200px;
     justify-self: center;
-    gap: 20px;
     overflow: hidden;
 }
 
@@ -255,9 +243,7 @@ body {
 }
 .main-content {
     float:right;
-    width: calc(100% - 250px);
-    display: block;
-
+    width: calc(100% - 270px);
 }
 .left-nav {
     margin-bottom: 30px;
@@ -288,12 +274,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 900px;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .card {
     flex: 1 1 calc(33.33% - 10px);
-    background: white;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
@@ -302,11 +287,13 @@ body {
 
 .card img {
     width: 100%;
+    background: #FBFBFB;
 }
 
 .cat {
     font-weight: 700;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .tabs-container {
@@ -314,8 +301,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    max-width: 1200px;
-    float: center;
+    max-width: 1100px;
     text-decoration: none;
 }
 
@@ -326,8 +312,10 @@ body {
 }
 
 .tabs li {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Cera Pro", sans-serif;
+
 }
 
 .tabs li a {
@@ -337,28 +325,72 @@ body {
     text-decoration: none;
 }
 
-.tabs>li.active>a:hover {
-    width: 111px;
-    color: #2d8d1a;
-    border-bottom:1px solid #388E3C;
-}
 
 .sort {
-    font-size: 14px;
+    font-size: 15px;
     color: #666;
 }
 
 .sort select {
     border: none;
-    background: transparent;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
     cursor: pointer;
 }
 
 .ban {
-    width: 110%;
-    float:right;
-    margin-top: 190%;
+    max-width: 100%;
+    margin-top: 300px;
 }
+.name {
+padding-right: 130px;
+font-family: "Cera Pro", sans-serif;
+font-size: 16px;
+}
+
+.price {
+padding-right: 180px;
+color: #46A358;
+font-family: "Cera Pro", sans-serif;
+font-size: 18px;
+}
+
+li.active a.green-class {
+    color: #46A358 !important;
+    border-bottom: 1px solid green;
+}
+li.green-plants a {
+    color: #46A358!important;
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    float: right; 
+}
+
+.pagination li {
+    float: left; /* Элементы идут в ряд */
+    margin-right: 5px;
+}
+
+.pagination li a {
+    display: block;
+    width: 35px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white; /* Белый фон */
+    font-family: "Cera Pro", sans-serif;
+}
+
+.pagination li.active a {
+    background-color: green; 
+    color: white; 
+    border-color: green;
+}
+

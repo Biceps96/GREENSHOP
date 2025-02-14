@@ -119,7 +119,7 @@
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .nav-links li {
@@ -664,4 +664,74 @@ display: flex;
 .vector:hover {
     
     display: block;
+}
+
+
+
+.menu-just:hover + .header-nav_submenu {
+    display: block;
+}
+
+.nav-links {
+    position: relative;
+}
+.first_down_menu {
+    background-color: #EDF6EE;
+    position: absolute;
+    top: 48px;
+    right: 30px;
+    width: 188px;
+    line-height: 7px;
+}
+
+.menu_just:hover + .first_down_menu {
+    display: block;
+   
+}
+.first_down_menu:hover {
+    display: block;
+}
+
+.first_down_menu a {
+    display: block;
+}
+
+
+.first_down_menu {
+    display: none;
+}
+
+
+.first_down_menu a {
+    padding: 15px 20px;
+    font-weight: 100;
+}
+
+.first_down_menu a:hover {
+    border: none;
+    background-color: #45a049;
+    color: white;
+    
+}
+
+.second_down_menu {
+    display: none;
+    width: 200px;
+    position: absolute;
+    left: 188px;
+    top: 0;
+    background: #EDF6EE;
+}
+
+
+.activ_second_li:hover + .second_down_menu {
+    display: block;
+}
+
+.second_down_menu:hover {
+    display: block;
+}
+.activ_second_li span {
+    margin-left: 76px;
+    font-weight: bold;
 }

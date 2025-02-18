@@ -164,6 +164,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-family: "Cera Pro", sans-serif;
 }
 
 
@@ -731,7 +732,151 @@ display: flex;
 .second_down_menu:hover {
     display: block;
 }
+
 .activ_second_li span {
     margin-left: 76px;
     font-weight: bold;
+}  
+
+.footerone {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #FBFBFB;
+    margin-top: 50px;
+
+    
+
+    
+}
+
+.ulfooter {
+    display: flex;
+    gap: 10px;
+}
+.ulfooter li {
+    list-style: none;
+    padding: 0px 25px;
+    border-right: #46A3581A 1px solid;
+    margin: 24px 0px;
+
+}
+.ulfooter li:last-child {
+    border-right: none;
+}
+
+.ulfooter li:last-child {
+    padding-right: 0;
+
+}
+
+.ulfooter li p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #727272;
+}
+.ulfooter li h5 {
+margin-bottom: 9px;
+}
+.maillfood {
+    width: 354px;
+    padding: 24px 25px 24px 0;
+}
+
+.maillfood p{
+font-size: 13px;
+line-height: 22px;
+color:#727272;
+margin-top:18px;
+}
+.maillfood h5 {
+    margin-bottom:25px;
+}
+
+.btnmail {
+    width: 85px;
+    height: 40px;
+    background-color: #46A358;
+    color:#EDF6EE;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    font-size: 18px;
+}
+
+.inpmail {
+    width: 244px;
+    height: 40px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+}
+
+.footertwo {
+    width: 1200px;
+    display: flex;
+    background: linear-gradient(to right, #EDF6EF, #52C368);
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 25px 22px;
+    align-items: center;
+}
+
+.footertwo p {
+    font-size: 14px;
+    color: #3D3D3D;
+    display: inline-block;
+    margin: 27px 1027px 26.7px 23px;
+
+}
+
+.linkfooter {
+    text-decoration: none;
+    color: #000000;
+    font-size:14px;
+}
+
+.footerthree {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: #FBFBFB;
+    padding-bottom: 29px;
+
+
+}
+
+.navfooter ul {
+    list-style: none;
+    
+}
+.navfooter ul li a {
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+    color: #3D3D3D;
+    margin-left:25px;
+    padding: 25px 0px;
+
+}
+.navfooter h5 {
+    margin: 33px 0px 8px 25px;
+    
+    
+}
+
+.social {
+    width: 354px;
+    padding: 24px 25px 24px 0;
+}
+.footertwo a {
+    display: flex;
+}
+.footertwo a img {
+    margin-right: 5px;
+}
+.copy {
+    text-align: center;
+    margin:6px;
 }

@@ -82,7 +82,101 @@
     font-weight: 600;
     font-style: italic;
 }
-
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?gm406t');
+    src:  url('../fonts/icomoon.eot?gm406t#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?gm406t') format('truetype'),
+      url('../fonts/icomoon.woff?gm406t') format('woff'),
+      url('../fonts/icomoon.svg?gm406t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ruwm61');
+    src:  url('../fonts/icomoon.eot?ruwm61#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ruwm61') format('truetype'),
+      url('../fonts/icomoon.woff?ruwm61') format('woff'),
+      url('../fonts/icomoon.svg?ruwm61#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?x35uj4');
+    src:  url('../fonts/icomoon.eot?x35uj4#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?x35uj4') format('truetype'),
+      url('../fonts/icomoon.woff?x35uj4') format('woff'),
+      url('../fonts/icomoon.svg?x35uj4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-login1:before {
+    content: "\e905";
+  }
+  .icon-Frame:before {
+    content: "\e900";
+  }
+  .icon-heart-1:before {
+    content: "\e901";
+  }
+  .icon-shopping-1:before {
+    content: "\e902";
+    color: #46a358;
+  }
+  .icon-YouTube:before {
+    content: "\e903";
+  }
+  .icon-phone:before {
+    content: "\e942";
+  }
+  .icon-envelop:before {
+    content: "\e945";
+  }
+  .icon-location:before {
+    content: "\e948";
+  }
+  .icon-arrow-right:before {
+    content: "\ea3c";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-linkedin:before {
+    content: "\eaca";
+  }
+  
+  
+  
+  
 * {
     box-sizing: border-box;
 }
@@ -156,9 +250,15 @@
     font-weight: bold;
     transition: background 0.3s;
 }
+.login-btn i {
+  color:white;
+  font-size: 20px;
+  margin: 0px 3px 0px 0px;
+}
 
 .login-btn:hover {
     background: #388E3C;
+    transform: scale(1.1);
 }
 
 
@@ -219,11 +319,12 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s;
 }
 
 .shop-button:hover {
     background-color: #388E3C;
+    transform: translateX(10px) rotate(10deg) translateY(5px);
+    
 }
 
 
@@ -486,6 +587,8 @@ display: flex;
 
 .btn:hover {
     background-color: #45a049;
+    transform: perspective(17px)
+    
 }
 
 .btnbox {
@@ -642,20 +745,20 @@ display: flex;
 .vector {
     display: none;
     position: absolute;
-    bottom:70px;    
-    right: 29%;
+    bottom: 73px;    
+    right: 33%;
+}
+.vector a {
+    font-size: 20px;
+    margin:0px 5px;
+    text-decoration: none;
+    color:#000000;
+
 }
 
 .card:hover {
     
     display: block!important;
-}
-
-.vector img {
-    width: 20px;
-    height: 20px;
-    margin: 0px 8px;
-
 }
 
 .img_s:hover + .vector {
@@ -666,8 +769,6 @@ display: flex;
     
     display: block;
 }
-
-
 
 .menu-just:hover + .header-nav_submenu {
     display: block;
@@ -795,13 +896,18 @@ margin-top:18px;
 }
 
 .btnmail {
-    width: 85px;
-    height: 40px;
     background-color: #46A358;
     color:#EDF6EE;
     border-radius: 0px 5px 5px 0px;
     border: none;
     font-size: 18px;
+    padding: 6px 10px 10px 13px;
+    text-decoration: none;
+}
+
+.btnmail:hover {
+    background: #388E3C;
+    transform: translateY(3in);
 }
 
 .inpmail {
@@ -835,6 +941,23 @@ margin-top:18px;
     color: #000000;
     font-size:14px;
 }
+.icon-location {
+    font-size: 18px;
+    margin: 5px 5px;
+    color: rgba(70, 163, 88, 1);
+
+}
+.icon-envelop {
+    font-size: 16px;
+    margin: 0px 5px;
+    color: rgba(70, 163, 88, 1);
+}
+.icon-phone {
+    font-size: 16px;
+    margin: 0px 5px;
+    color: rgba(70, 163, 88, 1);
+}
+
 
 .footerthree {
     display: flex;
@@ -843,6 +966,7 @@ margin-top:18px;
     justify-content: space-between;
     background-color: #FBFBFB;
     padding-bottom: 29px;
+    padding: 34px 0px 34px 25px;
 
 
 }
@@ -856,19 +980,24 @@ margin-top:18px;
     line-height: 30px;
     font-size: 14px;
     color: #3D3D3D;
-    margin-left:25px;
     padding: 25px 0px;
 
 }
 .navfooter h5 {
-    margin: 33px 0px 8px 25px;
+    margin-bottom: 8px;
+    
     
     
 }
 
 .social {
     width: 354px;
-    padding: 24px 25px 24px 0;
+    padding: 0px 25px 0px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
 }
 .footertwo a {
     display: flex;
@@ -880,3 +1009,26 @@ margin-top:18px;
     text-align: center;
     margin:6px;
 }
+
+.social-list-link {
+    color: rgba(70, 163, 88, 0.6);
+    text-decoration: none;
+    
+}
+.social ul {
+    margin: 20px 0px;
+}
+
+.social ul li {
+    display: inline-block;
+}
+
+.social ul li a {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #CBCBCB;
+    border-radius: 8px;
+}
+ .img-accept {
+    margin-top: 13px;
+ }

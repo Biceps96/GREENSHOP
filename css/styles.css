@@ -1032,3 +1032,117 @@ margin-top:18px;
  .img-accept {
     margin-top: 13px;
  }
+
+
+
+
+ .menu {
+    width: 60px;  
+    height: 60px;
+    position: relative;
+    z-index: 2;
+    left: 10;
+    top: 5;
+ }
+ .menu span,
+ .menu:after,
+ .menu:before {
+    content: '';
+    width:100%;
+    display: block;
+    height: 5px;
+    background: #7e8bfa;
+    position: absolute;
+ }
+ .menu:before {
+    top:0;
+    left:0;
+    transition: transform 0.9s linear;
+ }
+ .menu:after {
+    bottom:0;
+    top:auto;
+    transition: transform 0.9s linear;
+ }
+ .menu span {
+    top:30px;
+    left:50%;
+     transform:translate(-50%, -2px);
+     transition:transform 0.1s linear, opacity 0.4s;
+ }
+ 
+ /*.menu:hover span {
+    opacity: 0;
+    transform: translate(-50%, -2px) scale(0);
+    
+ }
+ .menu:hover:after {
+    transform: rotate(-45deg) translate(19px, -21px);
+    transition:transform 0.9s linear, opacity 0.4s;
+    
+ }
+ .menu:hover:before {
+    transform: rotate(45deg) translate(18px, 20px);
+    transition:transform 0.9s linear, opacity 0.4s;
+ }*/
+
+.menuon {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: -99999px;
+}
+
+/*.label-input:before {
+display: inline-block;
+content: '';
+width: 15px; 
+height: 15px;
+border: 2px solid #000000;
+border-radius: 3px;
+}*/
+
+
+/*.label-input:has(.menuon:checked)::before {
+    background: #388E3C;
+}*/
+
+body {
+    margin: 0;
+}
+.header {
+    position: relative;
+}
+.main-menu {
+    padding: 75px;
+    border: 5px solid #333;
+    background: #CBCBCB;
+    position: absolute;
+    width: 400px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s linear;
+}
+
+.menuon:checked + .menu span {
+    opacity: 0;
+    transform: translate(-50%, -2px) scale(0);
+}
+
+ .menuon:checked +.menu:after {
+    transform: rotate(-45deg) translate(19px, -21px);
+    transition:transform 0.9s linear, opacity 0.4s;
+    
+ }
+ .menuon:checked + .menu:before {
+    transform: rotate(45deg) translate(18px, 20px);
+    transition:transform 0.9s linear, opacity 0.4s;
+ }
+
+ .label-input:has(.menuon:checked) + .main-menu {
+    transform: translateX(0);
+ }
